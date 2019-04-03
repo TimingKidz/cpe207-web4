@@ -1,0 +1,18 @@
+{
+  "name": "4thlab",
+  "version": "1.0.0",
+  "description": "Homework 4",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "Thanakrit Tatsamakorn",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
