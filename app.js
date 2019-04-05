@@ -21,6 +21,9 @@ const server = http.createServer((req, res) => {
     case '.js':
       contentType = 'text/javascript';
       break;
+    case '.min.js':
+      contentType = 'text/javascript';
+      break;
     case '.ttf':
       contentType = 'application/octet-stream'
       break;
@@ -37,6 +40,9 @@ const server = http.createServer((req, res) => {
       contentType = 'application/vnd.ms-fontobject'
       break;
     case '.css':
+      contentType = 'text/css';
+      break;
+    case '.min.css':
       contentType = 'text/css';
       break;
     case '.json':
