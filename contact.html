@@ -9,6 +9,8 @@
     <title>TKz - Contact</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
@@ -70,10 +72,12 @@
                 <div class="col-lg-3">
                     <div class="contact_info">
                         <div class="info_item">
+                            <i class="lnr lnr-phone-handset"></i>
                             <h6><a href="#">0903310276</a></h6>
                             <p>Mon to Fri 9am to 6 pm</p>
                         </div>
                         <div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
                             <h6><a href="mailto: timingkids2014@gmail.com">timingkids2014@gmail.com</a></h6>
                             <p>Send us your query anytime!</p>
                         </div>
@@ -123,22 +127,22 @@
                     </form>
                 </div>
             </div>
+            <div id="error" class="mt-4"></div>
+            <table id="list" class="table table-bordered mt-5">
+                <thead class="thead">
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Subject</th>
+                        <th>Message</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="contact-list"></tbody>
+            </table>
         </div>
-        <div id="error" class="mt-4"></div>
-        <table id="list" class="table table-bordered mt-5">
-            <thead class="thead">
-                <tr>
-                    <th></th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
-                    <th>Subject</th>
-                    <th>Message</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="contact-list"></tbody>
-        </table>
     </section>
     <!--================Contact Area =================-->
 
@@ -151,13 +155,21 @@
                         <div class="f_logo">
                             <img src="img/logo.png" alt="">
                         </div>
+                        <div class="f_title">
+                            <h4>Follow Me</h4>
+                        </div>
+                        <ul class="list">
+                            <li><a href="https://www.facebook.com/thanakrit119"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/tkz.pt/"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
                     </aside>
                     <div class="copyright">
                         <p>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy;
                             <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template is made with love by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
@@ -212,11 +224,7 @@
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/jquery.ajaxchimp.min.js"></script>
     <script src="js/mail-script.js"></script>
-    <!-- contact js -->
     <script src="js/getform.js"></script>
-    <!-- <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script> -->
-    <!-- <script src="js/contact.js"></script> -->
 </body>
 
 </html>
